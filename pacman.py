@@ -83,8 +83,7 @@ def world():
     bgcolor('black') # background color
     path.color('blue') # path color
 
-    for index in range(len(tiles)): # draw tiles
-        tile = tiles[index]
+    for index, tile in enumerate(tiles): # draw tiles
 
         if tile > 0:
             x = (index % 20) * 20 - 200
